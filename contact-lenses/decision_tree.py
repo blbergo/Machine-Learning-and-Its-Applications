@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Bryan Bergo
+# FILENAME: decision_tree.py
+# SPECIFICATION: Create a decision tree based on the contact lenses dataset.
 # FOR: CS 4210- Assignment #1
 # TIME SPENT: 22 minutes code, ~4 hours for the rest
 #-----------------------------------------------------------*/
