@@ -3,7 +3,7 @@
 # FILENAME: title of the source file
 # SPECIFICATION: description of the program
 # FOR: CS 4210- Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 22 minutes code, ~4 hours for the rest
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard
@@ -27,11 +27,33 @@ with open('contact_lens.csv', 'r') as csvfile:
 
 #transform the original categorical training features into numbers and add to the 4D array X. For instance Young = 1, Prepresbyopic = 2, Presbyopic = 3
 #--> add your Python code here
-# X =
+X = []
+feature_map = {
+  'Young': 1,
+  'Prepresbyopic': 2,
+  'Presbyopic': 3,
+  'Myope': 1,
+  'Hypermetrope': 2,
+  'No': 1,
+  'Yes': 2,
+  'Normal': 1,
+  'Reduced': 2
+}
+
+for row in db:
+  X.append(tuple([feature_map[row[0]], feature_map[row[1]], feature_map[row[2]], feature_map[row[3]]]))
 
 #transform the original categorical training classes into numbers and add to the vector Y. For instance Yes = 1, No = 2
-#--> addd your Python code here
-# Y =
+#--> add your Python code here
+label_map = {
+  'Yes': 1,
+  'No': 2
+}
+
+Y = []
+
+for row in db:
+  Y.append(label_map[row[4]])
 
 #fitting the decision tree to the data
 clf = tree.DecisionTreeClassifier(criterion = 'entropy')
