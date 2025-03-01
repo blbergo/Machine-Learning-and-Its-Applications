@@ -13,7 +13,7 @@
 from sklearn import tree
 import csv
 
-dataSets = ['./data/contact_lens_training_1.csv', './data/contact_lens_training_2.csv', './data/contact_lens_training_3.csv']
+dataSets = ['./assignment-2/data/contact_lens_training_1.csv', './assignment-2/data/contact_lens_training_2.csv', './assignment-2/data/contact_lens_training_3.csv']
 
 for ds in dataSets:
 
