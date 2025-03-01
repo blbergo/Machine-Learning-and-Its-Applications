@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Bryan Bergo
 # FILENAME: decision_tree_2.py
-# SPECIFICATION: description of the program
+# SPECIFICATION: Predicts the class of a contact lens using a decision tree algorithm
 # FOR: CS 4210- Assignment #2
 # TIME SPENT: 20 minutes
 #-----------------------------------------------------------*/

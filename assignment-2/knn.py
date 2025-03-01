@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Bryan Bergo
+# FILENAME: knn.py
+# SPECIFICATION: Predicts the class of an email as spam or ham using a k-nearest neighbors algorithm
 # FOR: CS 4210- Assignment #2
-# TIME SPENT: how long it took you to complete the assignment start 132
+# TIME SPENT: 18 minutes
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard vectors and arrays
