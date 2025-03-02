@@ -59,16 +59,14 @@ with open('./data/weather_test.csv', 'r') as csvfile:
         if i > 0: #skipping the header
             dbTest.append(row)
 
-#Printing the header os the solution
-print('PREDICTIONS')
-print('-----------')
+#Printing the header of the solution
+print("Day     Outlook     Temperature     Humidity     Wind     PlayTennis     Confidence")
 
-
-#Use your test samples to make probabilistic predictions. For instance: clf.predict_proba([[3, 1, 2, 1]])[0]
+#Use your test samples to make probabilistic predictions
 for data in dbTest:
-    prediction = clf.predict_proba([[feature_map[data[1]], feature_map[data[2]], feature_map[data[3]], feature_map[data[4]]]])[0]
-    print('Probability of No: ' + str(prediction[0]))
-    print('Probability of Yes: ' + str(prediction[1]))
-    print('-----------')
+    features = [[feature_map[data[1]], feature_map[data[2]], feature_map[data[3]], feature_map[data[4]]]]
+    prediction = clf.predict_proba(features)[0]
+    play_tennis = "Yes" if clf.predict(features)[0] == 1 else "No"
+    print(f"{data[0]:<8}{data[1]:<12}{data[2]:<15}{data[3]:<12}{data[4]:<9}{play_tennis:<14}{max(prediction):.2f}")
 
 
