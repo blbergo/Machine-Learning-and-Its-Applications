@@ -15,7 +15,7 @@ import csv
 db = []
 
 #Reading the data in a csv file
-with open('./assignment-2/data/email_classification.csv', 'r') as csvfile:
+with open('./data/email_classification.csv', 'r') as csvfile:
   reader = csv.reader(csvfile)
   for i, row in enumerate(reader):
       if i > 0: #skipping the header
