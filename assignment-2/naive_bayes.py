@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Bryan Bergo
 # FILENAME: naive_bayes.py
-# SPECIFICATION: description of the program
+# SPECIFICATION: Predicts the probability of a class given the features
 # FOR: CS 4210- Assignment #2
-# TIME SPENT: how long it took you to complete the assignment start 9 minutes
+# TIME SPENT: 8 minutes
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard
